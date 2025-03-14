@@ -94,7 +94,7 @@ const AddRestaurantForm = () => {
                             {...register("address", {
                                 required: "Address is required",
                                 pattern: {
-                                    value: /^[A-Za-z0-9]+(?:,\s?[A-Za-z0-9]+)*(?:\s[A-Za-z0-9]+)*$/,
+                                    value: /^[A-Za-z0-9\/]+(?:,\s?[A-Za-z0-9\/]+)*(?:\s[A-Za-z0-9\/]+)*$/,
                                     message: "Address must start with a letter and contain only single spaces",
                                 },
                             })}
