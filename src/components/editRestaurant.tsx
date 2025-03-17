@@ -54,6 +54,9 @@ function EditRestaurant() {
             }
         } catch (error: any) {
             console.log('error edit ', error)
+            if(error && error?.response?.status === 403){
+                toast.error('Restaurant Name Already Exist')
+            }
         }
     }
 
